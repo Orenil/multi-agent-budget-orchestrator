@@ -1,0 +1,27 @@
+{
+  "name": "multi-agent-budget-orchestrator",
+  "version": "1.0.0",
+  "description": "Orchestration layer for multi-agent LLM workflows that enforces hierarchical, hard token/time/cost budgets per sub-agent, with explicit partial-result degradation on exhaustion.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["multi-agent", "orchestration", "budget", "llm"],
+  "author": "Orenil",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/pg": "^8.21.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "ioredis": "^6.0.0",
+    "pg": "^8.23.0"
+  }
+}
